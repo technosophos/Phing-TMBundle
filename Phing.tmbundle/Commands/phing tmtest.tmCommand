@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>out=$(phing -buildfile $TM_PROJECT_DIRECTORY/build.xml tmtest)
+
+if [[ $? &gt; 0 ]]; then
+	. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+	html_header 'Build Failed' 'Unit tests could not complete'
+	echo "&lt;strong&gt;Unit testing failed&lt;/strong&gt;"
+	echo "&lt;pre&gt;$out&lt;/pre&gt;"
+	html_footer
+else
+	echo "&lt;meta http-equiv='Refresh'
+        content='0;URL=tm-file:///$TM_PROJECT_DIRECTORY/test/reports/html/phpunit2-noframes.html'&gt;"
+fi</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@I</string>
+	<key>name</key>
+	<string>phing tmtest</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>1D7C72E5-D16C-4E4A-BDAC-E613592B53EB</string>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<project name="${1}" 
+  description="${2}"
+  basedir="." 
+  default="main"
+>
+<!--
+This is the Phing build file for QueryPath.
+
+Phing is a build tool. Learn more about it at http://phing.info.
+
+Copyright (c) 2009, Matt Butcher, some rights reserved.
+-->
+
+  <!-- Global properties -->
+  <property name="srcdir" value="./src"/>
+  <property name="testdir" value="./test"/>
+  <property name="builddir" value="./bin/build"/>
+  <property name="docsdir" value="./docs"/>
+  <property name="packagedir" value="./dist"/>
+
+  <!-- Files that must be included in the release -->
+  <fileset id="licensefiles" dir=".">
+    <include name="README"/>
+    <include name="INSTALL"/>
+  </fileset>
+
+  <!-- Files to be treated as source code -->
+  <fileset id="sourcecode" dir="${srcdir}">
+    <include name="**/*" />
+  </fileset>
+
+  <!-- Main Target -->
+  <target name="main" description="main target">
+      <copy todir="${builddir}">
+          <fileset refid="srcdir" />
+      </copy>
+  </target>
+</project>
