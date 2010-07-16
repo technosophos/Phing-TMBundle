@@ -18,7 +18,7 @@ res=$(tail -n1 &lt;&lt;&lt;"$res")
 
 html_header "phing $res" "Running phing with target $res"
 echo '&lt;pre&gt;'
-phing -buildfile $TM_PROJECT_DIRECTORY/build.xml $res 2&gt;&amp;1 | sed 's/\[m$/&lt;\/span&gt;/g' | sed 's/\[2;31m/&lt;span style="color:red"&gt;/g' |sed 's/\[2;36m/&lt;span style="color:blue"&gt;/g' |sed 's/\[2;32m/&lt;span style="color:orange"&gt;/g'
+phing -buildfile $TM_PROJECT_DIRECTORY/build.xml $res 2&gt;&amp;1 | sed 's/\[m$/&lt;\/span&gt;/g' | sed -E 's/\[[0-9]+;31m/&lt;span style="color:red"&gt;/g' |sed -E 's/\[[0-9]+;36m/&lt;span style="color:blue"&gt;/g' |sed -E 's/\[[0-9]+;32m/&lt;span style="color:orange"&gt;/g'
 echo "&lt;/pre&gt;"
 html_footer</string>
 	<key>input</key>
