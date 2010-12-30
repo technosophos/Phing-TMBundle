@@ -10,10 +10,10 @@
       &lt; template_in.txt &gt; "$TM_NEW_FILE"
 fi</string>
 	<key>extension</key>
-	<string>xml</string>
+	<string>properties</string>
 	<key>name</key>
-	<string>build.xml</string>
+	<string>properties file</string>
 	<key>uuid</key>
-	<string>6B159F7A-53D3-43ED-A5BF-C2C721114259</string>
+	<string>0F22F32D-6367-4A52-ACD6-4960ACBF5DC7</string>
 </dict>
 </plist>

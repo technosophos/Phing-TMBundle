@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>target</string>
 	<key>scope</key>
-	<string>text.xml</string>
+	<string>text.xml.phing</string>
 	<key>tabTrigger</key>
 	<string>target</string>
 	<key>uuid</key>

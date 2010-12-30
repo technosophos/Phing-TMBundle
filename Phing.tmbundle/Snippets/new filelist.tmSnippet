@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>new filelist</string>
 	<key>scope</key>
-	<string>text.xml</string>
+	<string>text.xml.phing</string>
 	<key>tabTrigger</key>
 	<string>filelist</string>
 	<key>uuid</key>

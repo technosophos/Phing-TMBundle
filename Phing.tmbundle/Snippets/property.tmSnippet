@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>property</string>
 	<key>scope</key>
-	<string>text.xml</string>
+	<string>text.xml.phing</string>
 	<key>tabTrigger</key>
 	<string>prop</string>
 	<key>uuid</key>

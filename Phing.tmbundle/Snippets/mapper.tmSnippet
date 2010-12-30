@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>mapper</string>
 	<key>scope</key>
-	<string>text.xml</string>
+	<string>text.xml.phing</string>
 	<key>tabTrigger</key>
 	<string>mapper</string>
 	<key>uuid</key>

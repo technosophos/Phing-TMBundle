@@ -20,8 +20,6 @@ html_footer</string>
 	<string>phing tmtarget</string>
 	<key>output</key>
 	<string>showAsHTML</string>
-	<key>scope</key>
-	<string>text.xml</string>
 	<key>uuid</key>
 	<string>0EDE2F92-ED1C-491C-9D4B-20ED2F077290</string>
 </dict>

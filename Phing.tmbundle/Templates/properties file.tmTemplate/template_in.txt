@@ -1,0 +1,24 @@
+#
+#  ${TM_NEW_FILE_BASENAME}
+#
+#  Created by ${TM_FULLNAME} on ${TM_DATE}.
+#
+# Properties files contain key/value pairs. To access these properties from
+# within your build.xml file, you must add something like this to the build.xml file:
+#
+# <property file="THIS.properties"/>
+#
+# Examples:
+#
+# Simple property
+#  key=value
+#
+# Property with classpath-like namespacing
+#
+#  my.favorite.cake=Red Velvet
+#  my.favorite.drink=Coffee
+#
+# Reference to another property
+#
+#  prompt=Do you like ${my.favorite.cake}?
+

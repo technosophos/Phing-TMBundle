@@ -18,8 +18,6 @@ html_footer</string>
 	<string>phing targets</string>
 	<key>output</key>
 	<string>showAsHTML</string>
-	<key>scope</key>
-	<string>text.xml</string>
 	<key>uuid</key>
 	<string>BC0AB491-AF70-48E1-8951-9B424A0C6A7D</string>
 </dict>

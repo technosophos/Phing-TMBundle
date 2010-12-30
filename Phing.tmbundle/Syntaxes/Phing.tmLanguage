@@ -18,13 +18,13 @@
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
-            (&lt;(?i:project|fileset|target|echo)\b.*?&gt;
+            (&lt;(?i:foo|project|fileset|target|echo)\b.*?&gt;
             |&lt;!--(?!.*--&gt;)
             |\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
             )</string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-            (&lt;/(?i:project|fileset|target|echo)&gt;
+            (&lt;/(?i:foo|project|fileset|target|echo)&gt;
             |^\s*--&gt;
             |(^|\s)\}
             )</string>
@@ -34,7 +34,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;\?)\s*([-_a-zA-Z0-9]+)</string>
+			<string>(&lt;\?)(xml)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -51,7 +51,7 @@
 			<key>end</key>
 			<string>(\?&gt;)</string>
 			<key>name</key>
-			<string>meta.tag.preprocessor.phing</string>
+			<string>meta.tag.preprocessor.xml.phing</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -88,24 +88,39 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>&lt;target\bname="([\w\-_]+)"\b.*?&gt;</string>
+			<string>(&lt;)(target)\s(name)="([\w\-_]+)"</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.xml</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.localname.xml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.phing</string>
+				</dict>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.phing</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>&lt;/target&gt;</string>
+			<string>&gt;</string>
 			<key>name</key>
-			<string>meta.target.phing</string>
+			<string>meta.tag.target.phing</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>text.xml</string>
+					<string>#tagStuff</string>
 				</dict>
 			</array>
 		</dict>
@@ -134,12 +149,12 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.xml</string>
+					<string>punctuation.definition.tag.phing</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.tag.localname.xml</string>
+					<string>entity.name.tag.phing</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -232,6 +247,10 @@
 					<key>include</key>
 					<string>#bare-ampersand</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#interpolated-variable</string>
+				</dict>
 			</array>
 		</dict>
 		<key>entity</key>
@@ -266,6 +285,8 @@
 					<string>punctuation.definition.string.begin.phing</string>
 				</dict>
 			</dict>
+			<key>comment</key>
+			<string>This seems to be how vars interpolated into text are usually labeled.</string>
 			<key>end</key>
 			<string>}</string>
 			<key>endCaptures</key>
@@ -277,7 +298,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.interpolated</string>
+			<string>constant.character.escape</string>
 		</dict>
 		<key>singlequotedString</key>
 		<dict>
@@ -313,6 +334,10 @@
 					<key>include</key>
 					<string>#bare-ampersand</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#interpolated-variable</string>
+				</dict>
 			</array>
 		</dict>
 		<key>tagStuff</key>
@@ -325,26 +350,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>entity.other.attribute-name.namespace.phing</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
 							<string>entity.other.attribute-name.phing</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.namespace.phing</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.phing</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string> (?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9]+)=</string>
+					<string>\s([-_a-zA-Z0-9]+)=</string>
 				</dict>
 				<dict>
 					<key>include</key>

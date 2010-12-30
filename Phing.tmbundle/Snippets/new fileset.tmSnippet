@@ -13,7 +13,7 @@
 	<key>name</key>
 	<string>new fileset</string>
 	<key>scope</key>
-	<string>text.xml</string>
+	<string>text.xml.phing</string>
 	<key>tabTrigger</key>
 	<string>fileset</string>
 	<key>uuid</key>
