@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+
+html_header 'Fast Test' 'Running phing unit tests'
+echo '&lt;pre&gt;'
+phing -buildfile $TM_PROJECT_DIRECTORY/build.xml -l 2&gt;&amp;1 | sed 's/\[m$/&lt;\/span&gt;/g' | sed 's/\[00;31m/&lt;span style="color:red"&gt;/g' |sed 's/\[00;36m/&lt;span style="color:blue"&gt;/g' |sed 's/\[00;32m/&lt;span style="color:orange"&gt;/g' | sed -E 's/^[-]+$/&lt;hr\/&gt;/g' | sed -E 's/^([a-zA-Z0-9 ]+)\:$/&lt;h2&gt;\1&lt;\/h2&gt;/g'
+echo "&lt;/pre&gt;"
+html_footer</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>phing targets</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>BC0AB491-AF70-48E1-8951-9B424A0C6A7D</string>
+</dict>
+</plist>

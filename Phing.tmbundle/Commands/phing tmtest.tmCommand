@@ -15,7 +15,7 @@ if [[ $? &gt; 0 ]]; then
 	html_footer
 else
 	echo "&lt;meta http-equiv='Refresh'
-        content='0;URL=tm-file:///$TM_PROJECT_DIRECTORY/test/reports/html/phpunit2-noframes.html'&gt;"
+        content='0;URL=tm-file:///$TM_PROJECT_DIRECTORY/test/reports/html/phpunit-noframes.html'&gt;"
 fi</string>
 	<key>input</key>
 	<string>none</string>
@@ -25,6 +25,8 @@ fi</string>
 	<string>phing tmtest</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
 	<key>uuid</key>
 	<string>1D7C72E5-D16C-4E4A-BDAC-E613592B53EB</string>
 </dict>

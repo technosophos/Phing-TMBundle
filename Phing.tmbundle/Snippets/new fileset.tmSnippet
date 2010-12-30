@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;fileset id="${1:name}" dir="${2:some/dir}"&gt;
+	&lt;include name="${3:**/*}" /&gt;
+	&lt;!-- To exclude a pattern:
+	&lt;exclude name="**/*.swp"/&gt;
+	--&gt;
+	$0
+&lt;/fileset&gt;</string>
+	<key>name</key>
+	<string>new fileset</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>fileset</string>
+	<key>uuid</key>
+	<string>BC658D67-EAE1-4D65-A44F-15514B4E123E</string>
+</dict>
+</plist>

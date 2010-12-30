@@ -1,15 +1,14 @@
 <?xml version="1.0"?>
-<project name="${1}" 
-  description="${2}"
-  basedir="." 
+<project name="PROJECT_NAME" 
+  description="A ONE SENTENCE DESCRIPTION" 
   default="main"
 >
 <!--
-This is the Phing build file for QueryPath.
+This is the Phing build file for this project.
 
 Phing is a build tool. Learn more about it at http://phing.info.
 
-Copyright (c) 2009, Matt Butcher, some rights reserved.
+Copyright (c) 2010, Matt Butcher, some rights reserved.
 -->
 
   <!-- Global properties -->
@@ -41,7 +40,7 @@ Copyright (c) 2009, Matt Butcher, some rights reserved.
 
   </target>
 
-  <target name="tmtest" description="Run PHPUnit tests from within TextMate.">
+  <target name="tmtest" description="Run unit/functional tests from within TextMate.">
 
   </target>
 </project>

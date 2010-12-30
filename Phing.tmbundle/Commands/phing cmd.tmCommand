@@ -29,6 +29,8 @@ html_footer</string>
 	<string>phing cmd</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.xml</string>
 	<key>uuid</key>
 	<string>EFCCD36D-77E3-40C3-872A-C80F9286CB6D</string>
 </dict>

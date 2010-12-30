@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;taskdef classname="${1:dotted.path.to.class}" name="${2:reference_name}"/&gt;
+</string>
+	<key>name</key>
+	<string>taskdef</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>taskdef</string>
+	<key>uuid</key>
+	<string>44E27029-96E3-4C71-A119-2695DE292060</string>
+</dict>
+</plist>
