@@ -1,0 +1,151 @@
+{	scopeName = 'text.xml.phing';
+    comment = 'Based on the TextMate XML syntax with help from the Ant bundle and the JSP language.
+    
+    Some notes:
+    * We ignore namespaces. Phing will croak with them.
+    * Currently, we support build.xml and phing.xml file types.
+    
+    TODO:
+    ';
+	fileTypes = ( 'build.xml', 'phing.xml' );
+    foldingStartMarker = '(?x)
+            (<(?i:foo|project|fileset|target|echo)\b.*?>
+            |<!--(?!.*-->)
+            |\{\s*($|\?>\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+            )';
+    foldingStopMarker = '(?x)
+            (</(?i:foo|project|fileset|target|echo)>
+            |^\s*-->
+            |(^|\s)\}
+            )';
+	patterns = (
+	    // {   name = 'meta.project.phing';
+	    //             begin = '<project(?=\b.*)>';
+	    //             end = '</project>';
+	    //             patterns = (
+	    //                 { include = 'text.xml'; }
+	    //             );
+	    //         },
+	    {	name = 'meta.tag.preprocessor.xml.phing';
+			begin = '(<\?)(xml)';
+			end = '(\?>)';
+			captures = {
+				1 = { name = 'punctuation.definition.tag.phing'; };
+				2 = { name = 'entity.name.tag.phing'; };
+			};
+			patterns = (
+				{	name = 'entity.other.attribute-name.phing';
+					match = ' ([a-zA-Z-]+)';
+				},
+				{	include = '#doublequotedString'; },
+				{	include = '#singlequotedString'; },
+			);
+		},
+	    {	name = 'comment.block.phing';
+			begin = '<[!%]--';
+			end = '--%?>';
+			captures = { 0 = { name = 'punctuation.definition.comment.phing'; }; };
+		},
+		{	name = 'meta.tag.target.phing';
+			begin = '(<)(target)\s(name)="([\w\-_]+)"';
+			end = '>';
+			beginCaptures = {
+			    1 = {   name = "punctuation.definition.tag.xml";  };
+			    2 = {   name = "entity.name.tag.localname.xml";  };
+			    3 = {   name = "entity.other.attribute-name.phing";  };
+			    4 = {   name = "entity.name.function.phing";  };
+			};
+			patterns = (
+			    { include = '#tagStuff'; }
+			);
+		},
+		{
+		    name = 'meta.tag.echo.phing';
+		    contentName = 'string.unquoted.echo.phing';
+		    begin = '<echo>';
+		    end = '</echo>';
+		    patterns = (
+				{  include = '#interpolated-variable';  },
+			);
+		},
+		{	name = 'meta.tag.phing';
+			begin = '(</?)([-_a-zA-Z0-9:]+)';
+			end = '(/?>)';
+			captures = {
+				1 = { name = 'punctuation.definition.tag.phing'; };
+				2 = { name = 'entity.name.tag.phing'; };
+			};
+			patterns = ( { include = '#tagStuff'; } );
+		},
+		{	include = '#entity'; },
+		{	include = '#bare-ampersand'; },
+		//{	include = 'text.xml';  },
+
+		{	name = 'string.unquoted.cdata.phing';
+		    comment = 'I do not know if Phing respects CDATA sections.';
+			begin = '<!\[CDATA\[';
+			end = ']]>';
+			beginCaptures = { 0 = { name = 'punctuation.definition.string.begin.phing'; }; };
+			endCaptures = { 0 = { name = 'punctuation.definition.string.end.phing'; }; };
+		},
+	);
+	repository = {
+		bare-ampersand = {
+			name = 'invalid.illegal.bad-ampersand.phing';
+			match = '&';
+		};
+		entity = {
+			name = 'constant.character.entity.xml';
+			match = '(&)([:a-zA-Z_][:a-zA-Z0-9_.-]*|#[0-9]+|#x[0-9a-fA-F]+)(;)';
+			captures = {
+				1 = { name = 'punctuation.definition.constant.phing'; };
+				3 = { name = 'punctuation.definition.constant.phing'; };
+			};
+		};
+		interpolated-variable = {
+		    name = 'constant.character.escape';
+		    comment = 'This seems to be how vars interpolated into text are usually labeled.';
+		    begin = '\${';
+		    end = '}';
+		    beginCaptures = { 0 = { name = 'punctuation.definition.string.begin.phing'; }; };
+			endCaptures = { 0 = { name = 'punctuation.definition.string.end.phing'; }; };
+		};
+		doublequotedString = {
+			name = 'string.quoted.double.phing';
+			begin = '"';
+			end = '"';
+			beginCaptures = { 0 = { name = 'punctuation.definition.string.begin.phing'; }; };
+			endCaptures = { 0 = { name = 'punctuation.definition.string.end.phing'; }; };
+			patterns = (
+				{	include = '#entity'; },
+				{	include = '#bare-ampersand'; },
+				{   include = '#interpolated-variable';},
+			);
+		};
+		singlequotedString = {
+			name = 'string.quoted.single.phing';
+			begin = "'";
+			end = "'";
+			beginCaptures = { 0 = { name = 'punctuation.definition.string.begin.phing'; }; };
+			endCaptures = { 0 = { name = 'punctuation.definition.string.end.phing'; }; };
+			patterns = (
+				{	include = '#entity'; },
+				{	include = '#bare-ampersand'; },
+				{   include = '#interpolated-variable';},
+			);
+		};
+		tagStuff = {
+			patterns = (
+				{	match = '\s([-_a-zA-Z0-9]+)=';
+					captures = {
+						1 = { name = 'entity.other.attribute-name.phing'; };
+						//2 = { name = 'punctuation.separator.namespace.phing'; };
+						//3 = { name = 'entity.name.tag.phing'; };
+					};
+				},
+				{	include = '#doublequotedString'; },
+				{	include = '#singlequotedString'; },
+			);
+		};
+	};
+}
