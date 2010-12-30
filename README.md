@@ -38,7 +38,7 @@ This project is released under an MIT-style license.
 ## License
 
 Phing-TMBundle | 
-Matt Butcher <matt@aleph-null.tv> | 
+Matt Butcher matt at aleph-null dt tv | 
 Copyright (C) 2010 Matt Butcher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
