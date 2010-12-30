@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- use returnProperty or outputProperty to capture results. --&gt;
+&lt;exec command="${1:ls -l}" dir="${2:dir/to/exec/in}" checkreturn="${3:true}"/&gt;</string>
+	<key>name</key>
+	<string>exec</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>exec</string>
+	<key>uuid</key>
+	<string>E5A269A2-58A0-4899-AC11-FF8F170618C5</string>
+</dict>
+</plist>

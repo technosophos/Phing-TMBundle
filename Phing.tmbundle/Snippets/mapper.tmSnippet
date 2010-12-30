@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;mapper type="${1:regexp}" from="${2:^(.*)\\.ent\\.xml\$}" to="${3:\\1.php}"/&gt;</string>
+	<key>name</key>
+	<string>mapper</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>mapper</string>
+	<key>uuid</key>
+	<string>68BB7796-95E3-4BE8-8395-8B3BC8253750</string>
+</dict>
+</plist>

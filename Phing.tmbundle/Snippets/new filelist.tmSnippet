@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;filelist dir="${1:base/dir}" files="${2:file1.txt,file2.txt}"/&gt;</string>
+	<key>name</key>
+	<string>new filelist</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>filelist</string>
+	<key>uuid</key>
+	<string>0D768FE3-4B4D-4DD7-A8EB-DEAA0C6D6C56</string>
+</dict>
+</plist>

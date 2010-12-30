@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;filterchain&gt;
+  &lt;!-- Short form:
+  &lt;replacetokens&gt;
+    &lt;token key="FOO" value="foo"/&gt;
+  &lt;/replacetokens&gt;
+  --&gt;
+  &lt;!-- Long form:
+  &lt;filterreader classname="phing.filters.TailFilter"&gt;
+    &lt;param name="lines" value="10"/&gt;
+  &lt;/filterreader&gt;
+  --&gt;
+&lt;/filterchain&gt;</string>
+	<key>name</key>
+	<string>filterchain</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>tabTrigger</key>
+	<string>filterchain</string>
+	<key>uuid</key>
+	<string>39C8DDF5-2CC8-47D9-B2F1-400B696A8663</string>
+</dict>
+</plist>
