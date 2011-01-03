@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;equals arg1="${1:\${some.property\}}" arg2="${1:\$\{other.property\}}"/&gt;</string>
+	<key>name</key>
+	<string>equals</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>equals</string>
+	<key>uuid</key>
+	<string>20BB0083-C5D6-4B6F-BB18-228582BFD5BD</string>
+</dict>
+</plist>

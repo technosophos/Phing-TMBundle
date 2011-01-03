@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;move file="${1:somefile.txt}" tofile="${2:/tmp/anotherfile.bak}" overwrite="${3:true}"/&gt;</string>
+	<key>name</key>
+	<string>rename</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>rename</string>
+	<key>uuid</key>
+	<string>84B6F8E4-E26A-493E-A8F5-3B808B20FB0A</string>
+</dict>
+</plist>

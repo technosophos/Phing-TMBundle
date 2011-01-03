@@ -15,15 +15,46 @@
 			<string>------------------------------------</string>
 			<string>C5CBABAE-B966-4D20-8A7D-00B6C2A206E9</string>
 			<string>44E27029-96E3-4C71-A119-2695DE292060</string>
-			<string>E5A269A2-58A0-4899-AC11-FF8F170618C5</string>
 			<string>------------------------------------</string>
 			<string>EFCCD36D-77E3-40C3-872A-C80F9286CB6D</string>
 			<string>BC0AB491-AF70-48E1-8951-9B424A0C6A7D</string>
 			<string>1D7C72E5-D16C-4E4A-BDAC-E613592B53EB</string>
 			<string>0EDE2F92-ED1C-491C-9D4B-20ED2F077290</string>
+			<string>------------------------------------</string>
+			<string>B9A6187E-0096-4ECA-8EED-9BEA72531107</string>
+			<string>486FB265-1AA1-4133-AF41-F25E4BCE6D8D</string>
+			<string>196B2B67-525A-494A-8CEA-45E539D340D7</string>
+			<string>E5A269A2-58A0-4899-AC11-FF8F170618C5</string>
+			<string>7C96B6B6-83AE-4249-908E-6B083007DEF7</string>
+			<string>80C1971C-C778-455D-A60F-BB997E8B96F9</string>
+			<string>162B381F-C972-407F-BD3A-6D7B2970800D</string>
+			<string>84B6F8E4-E26A-493E-A8F5-3B808B20FB0A</string>
+			<string>C085C280-F7E4-4F58-B2A0-5877B3FB6041</string>
 		</array>
 		<key>submenus</key>
-		<dict/>
+		<dict>
+			<key>C085C280-F7E4-4F58-B2A0-5877B3FB6041</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>866160A9-FFE9-4B7D-A044-871189E4F445</string>
+					<string>A53CE9A8-6D57-4E7B-AE7E-6DAD453D20A1</string>
+					<string>E2D14290-4AFA-4D46-B0D1-E15803B289DD</string>
+					<string>20BB0083-C5D6-4B6F-BB18-228582BFD5BD</string>
+					<string>2921B2BC-DD40-4BB8-BB3B-C6C5B48A598E</string>
+					<string>15738F53-0DFB-4236-A198-877DB1CC9218</string>
+					<string>132F0DE3-AA71-4A4A-AEA1-8FDA00D00720</string>
+					<string>36888515-AAA2-47F4-A2BC-6110C1CD9C9A</string>
+					<string>80435DC4-8FFB-42BF-AC91-289293E31053</string>
+					<string>D5C4B366-475E-4166-9772-865E6D774104</string>
+					<string>1590009F-0997-4DE5-818F-8B54313CDCD5</string>
+					<string>9FAC03A2-AB36-424A-ABAD-992D7F5EA66C</string>
+					<string>26F64FDA-67F9-4B0E-80EF-0C673FE3F144</string>
+				</array>
+				<key>name</key>
+				<string>conditions</string>
+			</dict>
+		</dict>
 	</dict>
 	<key>name</key>
 	<string>Phing</string>
@@ -38,6 +69,7 @@
 		<string>0EDE2F92-ED1C-491C-9D4B-20ED2F077290</string>
 		<string>1D7C72E5-D16C-4E4A-BDAC-E613592B53EB</string>
 		<string>85176457-4387-46A7-B955-94883C5AE51F</string>
+		<string>196B2B67-525A-494A-8CEA-45E539D340D7</string>
 		<string>E5A269A2-58A0-4899-AC11-FF8F170618C5</string>
 		<string>44E27029-96E3-4C71-A119-2695DE292060</string>
 		<string>E3A66D82-C4D5-4E0D-A135-549FC49A3F43</string>
@@ -45,6 +77,25 @@
 		<string>39C8DDF5-2CC8-47D9-B2F1-400B696A8663</string>
 		<string>68BB7796-95E3-4BE8-8395-8B3BC8253750</string>
 		<string>DF03CBDC-6CA2-4F41-8FF5-5CD0B60DE308</string>
+		<string>7C96B6B6-83AE-4249-908E-6B083007DEF7</string>
+		<string>84B6F8E4-E26A-493E-A8F5-3B808B20FB0A</string>
+		<string>486FB265-1AA1-4133-AF41-F25E4BCE6D8D</string>
+		<string>B9A6187E-0096-4ECA-8EED-9BEA72531107</string>
+		<string>80C1971C-C778-455D-A60F-BB997E8B96F9</string>
+		<string>162B381F-C972-407F-BD3A-6D7B2970800D</string>
+		<string>866160A9-FFE9-4B7D-A044-871189E4F445</string>
+		<string>A53CE9A8-6D57-4E7B-AE7E-6DAD453D20A1</string>
+		<string>E2D14290-4AFA-4D46-B0D1-E15803B289DD</string>
+		<string>26F64FDA-67F9-4B0E-80EF-0C673FE3F144</string>
+		<string>9FAC03A2-AB36-424A-ABAD-992D7F5EA66C</string>
+		<string>1590009F-0997-4DE5-818F-8B54313CDCD5</string>
+		<string>D5C4B366-475E-4166-9772-865E6D774104</string>
+		<string>80435DC4-8FFB-42BF-AC91-289293E31053</string>
+		<string>36888515-AAA2-47F4-A2BC-6110C1CD9C9A</string>
+		<string>132F0DE3-AA71-4A4A-AEA1-8FDA00D00720</string>
+		<string>15738F53-0DFB-4236-A198-877DB1CC9218</string>
+		<string>2921B2BC-DD40-4BB8-BB3B-C6C5B48A598E</string>
+		<string>20BB0083-C5D6-4B6F-BB18-228582BFD5BD</string>
 	</array>
 	<key>uuid</key>
 	<string>898E1AB9-8FD4-4571-A15D-799556F00416</string>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;pdosqlexec url="${1:mysql:host=localhost;dbname=test}" 
+	userid="${2:username}" password="${3:password}"&gt;
+	&lt;!-- Add a fileset, filelist, or transaction here. --&gt;
+	$0
+
+	&lt;!-- Format output as plain text and send it to Phing log. --&gt;
+	&lt;formatter type="plain" usefile="false" /&gt;
+&lt;/pdosqlexec&gt;</string>
+	<key>name</key>
+	<string>pdo exec</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>pdo</string>
+	<key>uuid</key>
+	<string>80C1971C-C778-455D-A60F-BB997E8B96F9</string>
+</dict>
+</plist>

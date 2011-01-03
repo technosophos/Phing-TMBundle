@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;contains string="${1:base string}" substring="${2:string}" casesensitve="${3:true}"/&gt;</string>
+	<key>name</key>
+	<string>contains</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>contains</string>
+	<key>uuid</key>
+	<string>26F64FDA-67F9-4B0E-80EF-0C673FE3F144</string>
+</dict>
+</plist>

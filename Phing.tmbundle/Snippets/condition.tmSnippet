@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;condition property="${1:isMacOrWindows}" value="${2:true}"&gt;
+	&lt;or&gt;
+		${3:&lt;os family="mac"/&gt;
+		&lt;os family="windows"/&gt;}
+	&lt;/or&gt;$0
+&lt;/condition&gt;
+</string>
+	<key>name</key>
+	<string>condition</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>condition</string>
+	<key>uuid</key>
+	<string>866160A9-FFE9-4B7D-A044-871189E4F445</string>
+</dict>
+</plist>

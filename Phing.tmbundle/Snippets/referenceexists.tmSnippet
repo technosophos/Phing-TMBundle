@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;referenceexists ref="${1:\${someid\}}"/&gt;</string>
+	<key>name</key>
+	<string>referenceexists</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>referenceexists</string>
+	<key>uuid</key>
+	<string>D5C4B366-475E-4166-9772-865E6D774104</string>
+</dict>
+</plist>

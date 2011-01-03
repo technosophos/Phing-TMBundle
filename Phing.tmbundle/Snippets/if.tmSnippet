@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;if&gt;
+	&lt;equals arg1="${1:\${some.property\}}" arg2="${2:some_value}" /&gt;
+	&lt;then&gt;
+		${3:&lt;!-- Do something --&gt;}
+	&lt;/then&gt;
+	&lt;!-- use elsif/equals/then for more conditions --&gt;
+	&lt;else&gt;
+		${4:&lt;!-- Do something else --&gt;}
+	&lt;/else&gt;
+&lt;/if&gt;</string>
+	<key>name</key>
+	<string>if</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>if</string>
+	<key>uuid</key>
+	<string>A53CE9A8-6D57-4E7B-AE7E-6DAD453D20A1</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;move file="${1:somefile}" todir="${2:some/dir}" overwrite="${3:true}" includeemptydirs="${4:true}"/&gt;
+</string>
+	<key>name</key>
+	<string>move</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>move</string>
+	<key>uuid</key>
+	<string>7C96B6B6-83AE-4249-908E-6B083007DEF7</string>
+</dict>
+</plist>

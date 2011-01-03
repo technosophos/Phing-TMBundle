@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- Docs say tsrcfile="foo.sql" works, too. --&gt;
+&lt;transaction src="${1:path/to/sqlfile.sql}"/&gt;</string>
+	<key>name</key>
+	<string>pdo transaction</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>transaction</string>
+	<key>uuid</key>
+	<string>162B381F-C972-407F-BD3A-6D7B2970800D</string>
+</dict>
+</plist>

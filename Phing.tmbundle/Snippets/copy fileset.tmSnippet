@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;copy todir="${1:some/dir}"&gt;
+    &lt;!-- Can take fileset, filelist, filterchain, mapper. You can also use 'file' and 'tofile' attributes to copy just one file. --&gt;
+	&lt;fileset id="${2:some_id}"/&gt;
+&lt;/copy&gt;</string>
+	<key>name</key>
+	<string>copy fileset</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>copy</string>
+	<key>uuid</key>
+	<string>486FB265-1AA1-4133-AF41-F25E4BCE6D8D</string>
+</dict>
+</plist>
