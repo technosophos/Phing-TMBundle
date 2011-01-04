@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;adhoc-type name="${1:typeName}"&gt;&lt;![CDATA[
+class ${2:ClassNameType} extends DataType {
+	// Add setters and getters.
+	$0;
+}
+]]&gt;&lt;/adhoc-type&gt;</string>
+	<key>name</key>
+	<string>ad hoc type</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>adhoc</string>
+	<key>uuid</key>
+	<string>C3711671-E9A9-429C-82B1-F577C4FA3D74</string>
+</dict>
+</plist>

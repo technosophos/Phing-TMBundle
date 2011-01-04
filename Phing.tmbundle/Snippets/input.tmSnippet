@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;input propertyname="${1:property.name}" defaultValue="${2:default}" promptChar="?"&gt;
+${3:prompt message}
+&lt;/input&gt;</string>
+	<key>name</key>
+	<string>input</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>input</string>
+	<key>uuid</key>
+	<string>1942FE5A-D2EA-482A-895B-A29AA8E6DCC8</string>
+</dict>
+</plist>

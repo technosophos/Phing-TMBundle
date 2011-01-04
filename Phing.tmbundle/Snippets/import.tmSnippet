@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;import file="${1:imported.xml}" optional="${2:false}"/&gt;
+&lt;!-- Path: \${phing.file.$1\} --&gt;</string>
+	<key>name</key>
+	<string>import</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>import</string>
+	<key>uuid</key>
+	<string>0E5234F8-396E-4E19-BA5E-1B3D687818CF</string>
+</dict>
+</plist>

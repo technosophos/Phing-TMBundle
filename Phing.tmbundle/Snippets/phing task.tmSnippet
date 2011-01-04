@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;phing phingfile="${1:somebuild.xml}" target="${2:sometarget}" haltonfailure="${3:false}"&gt;
+  &lt;!-- property name="foo" value="bar" / --&gt;
+  $0
+&lt;/phing&gt;</string>
+	<key>name</key>
+	<string>phing task</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>phing</string>
+	<key>uuid</key>
+	<string>9CF14D6F-A81F-4AC5-ADDE-720AB87002C5</string>
+</dict>
+</plist>
