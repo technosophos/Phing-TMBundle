@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;adhoc-task name="${1:task_name}"&gt;&lt;![CDATA[
+class ${2:ClassNameTask} extends Task {
+	public function init() {}
+	public function main() {
+		$0
+	}
+}
+]]&gt;&lt;/adhoc-task&gt;</string>
+	<key>name</key>
+	<string>ad hoc task</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>adhoc</string>
+	<key>uuid</key>
+	<string>FA1FAF18-BDCC-4F51-8FD0-592CBF942D26</string>
+</dict>
+</plist>
