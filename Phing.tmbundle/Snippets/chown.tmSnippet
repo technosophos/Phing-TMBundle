@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;chown file="${1:file_or_dir}" user="${2:uname.group}"/&gt;</string>
+	<key>name</key>
+	<string>chown</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>chown</string>
+	<key>uuid</key>
+	<string>A71EA7CE-0184-4710-89E9-E52C52D5A251</string>
+</dict>
+</plist>

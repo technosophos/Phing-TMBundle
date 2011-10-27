@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;chmod file="${1:file_or_dir}" mode="${2:0755}" /&gt;</string>
+	<key>name</key>
+	<string>chmod</string>
+	<key>scope</key>
+	<string>text.xml.phing</string>
+	<key>tabTrigger</key>
+	<string>chmod</string>
+	<key>uuid</key>
+	<string>A3F71A5A-A243-4744-8BEF-112C0CDDFFE6</string>
+</dict>
+</plist>
